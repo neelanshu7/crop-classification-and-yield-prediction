@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #BCBBB8;
+}
+
+/* Navbar */
+#navbar {
+    background-color: rgba(4, 116, 28, 0.845);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap; 
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(244, 255, 240);
+    font-size: 20px;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #FFD700;
+}
+
+/* Head */
+h1 {
+    color: green;
+    text-align: center;
+}
+
+/* Content Pane */
+#home, #about, #contact {
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 35px;
+    border-radius: 30px;
+    height: auto; 
+}
+
+/* Form Area */
+.row {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px; 
+    margin: 10px; 
+}
+
+.submit-button {
+    padding: 30px;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+}
+
+input {
+    font-size: medium;
+    font-weight: 500;
+}
+
+/* About Page and Contact Us Page */
+#about, #contact {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.details {
+    padding-top: 75px;
+    padding-left: 170px;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    height: 25px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .nav-link {
+        margin: 5px 0; 
+        font-size: 18px; 
+    }
+
+    .details {
+        padding-left: 20px; 
+        font-size: 18px; 
+    }
+
+    #home, #about, #contact {
+        margin: 20px; 
+        padding: 15px; 
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .column {
+        width: 100%;
+        margin: 10px 0; 
+    }
+
+    button {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        font-size: 16px; 
+    }
+
+    .details {
+        font-size: 16px; 
+    }
+
+    button {
+        height: 45px; 
+    }
+}

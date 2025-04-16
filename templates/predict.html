@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yield Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Yield Prediction Result</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Input Parameter</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>State</td>
+                    <td>{{ state }}</td>
+                </tr>
+                <tr>
+                    <td>Season</td>
+                    <td>{{ season }}</td>
+                </tr>
+                <tr>
+                    <td>Crop</td>
+                    <td>{{ crop }}</td>
+                </tr>
+                <tr>
+                    <td>Area</td>
+                    <td>{{ area }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="text-center">Predicted Yield: {{ predicted_yield }} tonnes</h4>
+        <div class="text-center">
+            <a href="/yield.html" class="btn btn-primary">Back to Yield Prediction</a>
+        </div>
+    </div>
+</body>
+</html>

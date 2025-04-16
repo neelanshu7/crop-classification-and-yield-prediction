@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Crop Recomendation</title>
+</head>
+<body>
+    <header id="navbar">
+        <h3 class="nav-link">Crop Recomendation</h3>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="./yield.html" class="nav-link">Yield Prediction</a>
+    </header>
+    <hr>
+    <!-- Home Page -->
+    <div id="home">
+    <h1>Crop Recommendation System 🌱</h1><br>
+    <!--Form-->
+      <form action="/recommendation.html" method="POST">
+          <div class="row">
+              <div class="column">
+					<label for="Nitrogen">Nitrogen (N)</label><br>
+                    <input type="number" id="Nitrogen" name="Nitrogen" placeholder="Enter Nitrogen" required step="0">
+				</div>
+               <div class="column">
+					<label for="Phosporus">Phosphorus (P)</label><br>
+					<input type="number" id="Phosporus" name="Phosporus" placeholder="Enter Phosphorus" required step="00">
+				</div>
+				<div class="column">
+					<label for="Potassium">Potassium (K)</label><br>
+					<input type="number" id="Potassium" name="Potassium" placeholder="Enter Potassium" required step="0">
+				</div>
+          </div>
+          <br>
+          <div class="row">
+				<div class="column">
+					<label for="Temperature">Temperature</label><br>
+					<input type="number" step="0.01" id="Temperature" name="Temperature" placeholder="Enter Temperature in °C" required step="0">
+				</div>
+				<div class="column">
+					<label for="Humidity">Humidity</label><br>
+					<input type="number" step="0.01" id="Humidity" name="Humidity" placeholder="Enter Humidity in %" required step="0">
+				</div>
+				<div class="column">
+					<label for="pH">pH</label><br>
+					<input type="number" step="0.01" id="Ph" name="Ph" placeholder="Enter pH value" required step="0">
+				</div>
+			</div>
+            <br>
+          <div class="row">
+				<div class="column">
+					<label for="Rainfall">Rainfall</label><br>
+					<input type="number" step="0.01" id="Rainfall" name="Rainfall" placeholder="Enter Rainfall in mm" required>
+				</div>
+			</div>
+            <div class="submit-button">
+                <button type="submit" >Get Recommendation</button>
+            </div>
+      </form><br>
+    </div>
+    <!-- About Page -->
+    <div id="about">
+        <h1>About Us</h1>
+        <h3>Crop Recommendation & Yield Prediction</h3><br>
+        <p>
+            At the heart of modern agriculture lies the need for innovation, sustainability, and precision. Our platform is dedicated to empowering farmers and agricultural stakeholders with cutting-edge solutions in Crop Recommendation and Yield Prediction, leveraging advanced technologies to transform farming practices for a better future.
+        </p><br>
+        <h3>Crop Recommendation: Smart Choices for Better Farming</h3><br>
+        <p>
+            Our Crop Recommendation System is designed to help farmers make informed decisions about which crops to cultivate, tailored to their unique environmental and economic conditions. By integrating data-driven insights and advanced machine learning algorithms, we provide personalized recommendations that maximize productivity and profitability.
+        </p><br>
+        <h3>Yield Prediction: Forecasting the Future of Harvests</h3><br>
+        <p>
+            Yield Prediction is a cornerstone of modern agriculture, enabling farmers to anticipate harvest outcomes with accuracy. Our platform employs state-of-the-art technologies like machine learning, satellite monitoring, and remote sensing to predict crop yields effectively.
+        </p>
+      </div>
+    <!-- Contact Page -->
+     <div id="contact">
+        <h1>Contact Us</h1>
+        <div class="details">
+            <pre>Phone No. : xxxxxxxxxx <br><br>            xxxxxxxxxx
+            </pre>
+            <pre>E-mail ID : 126015066@sastra.ac.in <br><br>            126158011@sastra.ac.in
+            </pre>
+            <pre>Github : <a href="https://github.com/neelanshu7/Crop_Classification_and_Yield_Prediction">Click here</a></pre><br>
+        </div>
+     </div>
+     <hr><footer>
+        Made by Neelanshu Mitra & Ayush Srivastava
+    </footer>
+</body>
+</html>

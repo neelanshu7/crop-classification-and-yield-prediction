@@ -1,0 +1,57 @@
+XG Boost Classification
+
+from xgboost import XGBClassifier
+# Create an XGBClassifier instance
+bst = XGBClassifier(
+    n_estimators=100,  # Number of boosted trees
+    max_depth=3,       # Maximum depth of each tree
+    learning_rate=0.1, # Learning rate for each iteration
+    objective='multi:softmax',  # Objective for multi-class classification
+    num_class=3        # Number of classes in the target variable
+)
+
+# Train the model
+bst.fit(X_train, y_train)
+# Make predictions on the test set
+preds = bst.predict(X_test)
+
+# Evaluate the model
+accuracy = accuracy_score(y_test, preds)
+print(f"Accuracy: {accuracy:.3f}")
+
+
+Scatter Plot for Classification dataset
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Load the dataset
+df = pd.read_csv("indiancrop.csv")
+
+# Extract unique crop classes
+unique_crops = df['CROP'].unique()
+
+# Generate distinct colors and markers for each crop class
+colors = plt.cm.tab20(np.linspace(0, 1, len(unique_crops)))
+markers = ['o', 's', '^', 'v', 'p', '*', 'h', 'D', '<', '>', '+', 'x', '|', '_']
+
+# Create the scatter plot
+plt.figure(figsize=(12, 8))
+for i, crop in enumerate(unique_crops):
+    crop_data = df[df['CROP'] == crop]
+    plt.scatter(
+        crop_data['TEMPERATURE'], 
+        crop_data['HUMIDITY'], 
+        color=colors[i], 
+        marker=markers[i % len(markers)], 
+        label=crop
+    )
+
+# Add labels, title, and legend
+plt.xlabel('Temperature')
+plt.ylabel('Humidity')
+plt.title('Scatter Plot of Crops by Temperature and Humidity')
+plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')  # Place legend outside the plot
+plt.tight_layout()
+plt.show()

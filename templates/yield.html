@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Yield Prediction🌱</title>
+</head>
+<body>
+    <header id="navbar">
+        <h3 class="nav-link">Yield Prediction</h3>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="/" class="nav-link">Crop Prediction</a>
+    </header>
+    <hr>
+    <!-- Home Page -->
+    <div id="home"> 
+    <h1>Yield Prediction System 🌱</h1><br>
+    <!--Form-->
+      <form action="/predict.html" method="POST">
+          <div class="row">
+              <div class="column">
+					<label for="State">State</label><br>
+                    <input id="State" name="State" placeholder="Enter State" list="state-ut" required>
+                    <datalist id="state-ut">
+                        <option value="00">Andaman and Nicobar Islands</option>
+                        <option value="01">Andhra Pradesh</option>
+                        <option value="02">Arunachal Pradesh</option>
+                        <option value="03">Assam</option>
+                        <option value="04">Bihar</option>
+                        <option value="05">Chandigarh</option>
+                        <option value="06">Chhattisgarh</option>
+                        <option value="07">Dadra and Nagar Haveli</option>
+                        <option value="08">Goa</option>
+                        <option value="09">Gujarat</option>
+                        <option value="10">Haryana</option>
+                        <option value="11">Himachal Pradesh</option>
+                        <option value="12">Jammu and Kashmir</option>
+                        <option value="13">Jharkhand</option>
+                        <option value="14">Karnataka</option>
+                        <option value="15">Kerala</option>
+                        <option value="16">Madhya Pradesh</option>
+                        <option value="17">Maharashtra</option>
+                        <option value="18">Manipur</option>
+                        <option value="19">Meghalaya</option>
+                        <option value="20">Mizoram</option>
+                        <option value="21">Nagaland</option>
+                        <option value="22">Odisha</option>
+                        <option value="23">Puducherry</option>
+                        <option value="24">Punjab</option>
+                        <option value="25">Rajasthan</option>
+                        <option value="26">Sikkim</option>
+                        <option value="27">Tamil Nadu</option>
+                        <option value="28">Telangana</option>
+                        <option value="29">Tripura</option>
+                        <option value="30">Uttar Pradesh</option>
+                        <option value="31">Uttarakhand</option>
+                        <option value="32">West Bengal</option>
+                    </datalist>
+				</div>
+               <div class="column">
+					<label for="Season">Season</label><br>
+					<input id="Season" name="Season" placeholder="Enter Season" list="crop-season" required>
+                    <datalist id="crop-season">
+                        <option value="0">Autumn</option>
+                        <option value="1">Kharif</option>
+                        <option value="2">Rabi</option>
+                        <option value="3">Summer</option>
+                        <option value="4">Whole Year</option>
+                        <option value="5">Winter</option>
+                    </datalist>
+				</div>
+          </div>
+          <br>
+          <div class="row">
+                <div class="column">
+                    <label for="Crop">Crop</label><br>
+                    <input id="Crop" name="Crop" placeholder="Enter Crop" list="crops" required>
+                    <datalist id="crops">
+                        <option value="00">Apple</option>
+                        <option value="01">Banana</option>
+                        <option value="02">Blackgram</option>
+                        <option value="03">ChickPea</option>
+                        <option value="04">Coconut</option>
+                        <option value="05">Coffee</option>
+                        <option value="06">Cotton</option>
+                        <option value="07">Grapes</option>
+                        <option value="08">Jute</option>
+                        <option value="09">KidneyBeans</option>
+                        <option value="10">Lentil</option>
+                        <option value="11">Maize</option>
+                        <option value="12">Mango</option>
+                        <option value="13">MothBeans</option>
+                        <option value="14">MungBean</option>
+                        <option value="15">Muskmelon</option>
+                        <option value="16">Orange</option>
+                        <option value="17">Papaya</option>
+                        <option value="18">PigeonPeas</option>
+                        <option value="19">Pomegranate</option>
+                        <option value="20">Rice</option>
+                        <option value="21">Watermelon</option>
+                    </datalist>
+                </div>
+				<div class="column">
+					<label for="Area">Area</label><br>
+					<input type="number" step="1.00" id="Area" name="Area" placeholder="Enter Area in hectare" required step="00.00">
+				</div>
+                
+                <!-- Production in 'tonnes' -->
+			</div>
+            <div class="submit-button">
+                <button type="submit" >Get Recommendation</button>
+            </div>
+      </form><br>
+    </div>
+</body>
+</html>
