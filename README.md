@@ -1,1 +1,1 @@
-# crop-classification-and-yield-prediction
+# Crop Classification and Yield Prediction
