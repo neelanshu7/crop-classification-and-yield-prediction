@@ -4,22 +4,13 @@ import pandas as pd
 import joblib  # For loading the ML model
 
 app = Flask(__name__)
-import os
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-crop_model = joblib.load(os.path.join(BASE_DIR, 'ensemble_model.pkl'))
-yield_model = joblib.load(os.path.join(BASE_DIR, 'xgboost_model.pkl'))
-label_encoder = joblib.load(os.path.join(BASE_DIR, 'label_encoder.pkl'))
-scaler = joblib.load(os.path.join(BASE_DIR, 'scaler.pkl'))   # Regression
-scaler1 = joblib.load(os.path.join(BASE_DIR, 'scaler1.pkl')) # Classification
-
-# # Load your trained ML models
-# crop_model = joblib.load('ensemble_model.pkl')
-# yield_model = joblib.load('xgboost_model.pkl')
-# label_encoder = joblib.load('label_encoder.pkl')
-# scaler=joblib.load('scaler.pkl')    # Regression
-# scaler1=joblib.load('scaler1.pkl')  # Classification
+# Load your trained ML models
+crop_model = joblib.load('ensemble_model.pkl')
+yield_model = joblib.load('xgboost_model.pkl')
+label_encoder = joblib.load('label_encoder.pkl')
+scaler=joblib.load('scaler.pkl')    # Regression
+scaler1=joblib.load('scaler1.pkl')  # Classification
 
 @app.route('/')
 def home():
@@ -68,5 +59,5 @@ def predict_yield():
     # return f'Predicted Yield: {predicted_yield:.2f} tonnes'
     return render_template('predict.html', state=state, season=season, crop=crop, area=area, predicted_yield=predicted_yield)
 
-# if __name__ == '__main__':
-#     app.run(debug=True) 
+if __name__ == '__main__':
+    app.run(debug=True) 
