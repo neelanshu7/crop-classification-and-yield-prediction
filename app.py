@@ -58,6 +58,8 @@ def predict_yield():
 
     # return f'Predicted Yield: {predicted_yield:.2f} tonnes'
     return render_template('predict.html', state=state, season=season, crop=crop, area=area, predicted_yield=predicted_yield)
-
+# Remove the comment for the code below for running in local server
+"""
 if __name__ == '__main__':
     app.run(debug=True) 
+"""
