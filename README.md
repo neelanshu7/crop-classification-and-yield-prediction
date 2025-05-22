@@ -10,5 +10,5 @@ Our Crop Recommendation System is designed to help farmers make informed decisio
 Yield Prediction is a cornerstone of modern agriculture, enabling farmers to anticipate harvest outcomes with accuracy. Our platform employs state-of-the-art technologies like machine learning, satellite monitoring, and remote sensing to predict crop yields effectively.
 
 #### About this repository
-**Download this repository and then run this command in the root location in your local system.**:-flask run --host=0.0.0.0<br>
+**Download this repository and then run this command in the root location in your local system.**:- **flask run --host=0.0.0.0**<br>
 ML project (.ipynb) files with csv files are in notebook folder.
