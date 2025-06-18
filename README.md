@@ -62,14 +62,23 @@ This repository contains:
    Open your browser and navigate to **http://localhost:5000/**
 
 ## 📌 Project Structure   
-plantalytics/
+Crop-Classification-Yield-Prediction/
 │
-├── notebook/                # Jupyter Notebooks (.ipynb) for ML models
-│   ├── crop_recommendation.ipynb
-│   └── yield_prediction.ipynb
+├── 📂 notebook/ # Jupyter Notebooks and datasets
+│ ├── crop_recommendation.ipynb
+│ ├── yield_prediction.ipynb
+│ └── dataset.csv
 │
-├── static/                  # Static files (CSS)
-├── templates/               # HTML templates for the web interface
-├── app.py                   # Main Flask application
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
+├── 📂 static/ # Static assets like CSS, JS, images
+│ ├── css/
+│ ├── js/
+│ └── images/
+│
+├── 📂 templates/ # HTML templates for Flask
+│ ├── index.html
+│ └── result.html
+│
+├── 📄 app.py # Main Flask application
+├── 📄 requirements.txt # Python dependencies
+├── 📄 README.md # Project documentation
+└── 📄 LICENSE # License file
