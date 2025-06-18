@@ -49,3 +49,16 @@ This repository contains:
    git clone https://github.com/your-username/plantalytics.git
    git clone https://github.com/neelanshu7/crop-classification-and-yield-prediction.git
    cd crop-classification-and-yield-prediction
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+
+3. **Run the Flask server:**
+   ```bash
+   flask run --host=0.0.0.0
+
+4. Access the application:
+   Open your browser and navigate to **http://localhost:5000/**
+
+   
