@@ -63,14 +63,24 @@ This repository contains:
 
 📌 Project Structure
    ```php
-   plantalytics/
-   │
-   ├── notebook/                # Jupyter Notebooks (.ipynb) for ML models
-   │   ├── crop_recommendation.ipynb
-   │   └── yield_prediction.ipynb
-   │
-   ├── static/                  # Static files (CSS, JS, images)
-   ├── templates/               # HTML templates for the web interface
-   ├── app.py                   # Main Flask application
-   ├── requirements.txt         # Python dependencies
-   └── README.md                # Project documentation
+Crop-Classification-Yield-Prediction/
+│
+├── 📂 notebook/               // Jupyter Notebooks and datasets
+│   ├── crop_recommendation.ipynb
+│   ├── yield_prediction.ipynb
+│   └── dataset.csv
+│
+├── 📂 static/                // Static assets like CSS, JS, images
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── 📂 templates/             // HTML templates for Flask
+│   ├── index.html
+│   └── result.html
+│
+├── 📄 app.py                 // Main Flask application
+├── 📄 requirements.txt       // Python dependencies
+├── 📄 README.md              // Project documentation
+└── 📄 LICENSE                // License file
+
