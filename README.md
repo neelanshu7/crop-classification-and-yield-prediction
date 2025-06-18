@@ -1,14 +1,50 @@
-# Crop Classification and Yield Prediction
-## Website-https://plantalytics.onrender.com
-### Crop Recommendation & Yield Prediction
-At the heart of modern agriculture lies the need for innovation, sustainability, and precision. Our platform is dedicated to empowering farmers and agricultural stakeholders with cutting-edge solutions in Crop Recommendation and Yield Prediction, leveraging advanced technologies to transform farming practices for a better future.
+# 🌾 Crop Classification and Yield Prediction
 
-### Crop Recommendation: Smart Choices for Better Farming
-Our Crop Recommendation System is designed to help farmers make informed decisions about which crops to cultivate, tailored to their unique environmental and economic conditions. By integrating data-driven insights and advanced machine learning algorithms, we provide personalized recommendations that maximize productivity and profitability.
+### 🔗 Live Website: [plantalytics.onrender.com](https://plantalytics.onrender.com)
 
-### Yield Prediction: Forecasting the Future of Harvests
-Yield Prediction is a cornerstone of modern agriculture, enabling farmers to anticipate harvest outcomes with accuracy. Our platform employs state-of-the-art technologies like machine learning, satellite monitoring, and remote sensing to predict crop yields effectively.
+---
 
-#### About this repository
-**Download this repository and then run this command in the root location in your local system.**:- **flask run --host=0.0.0.0**<br>
-ML project (.ipynb) files with csv files are in notebook folder.
+## 🚀 Overview
+
+At the heart of modern agriculture lies the need for **innovation**, **sustainability**, and **precision**.  
+**Plantalytics** empowers farmers and agricultural stakeholders with cutting-edge solutions for **Crop Recommendation** and **Yield Prediction**, harnessing the power of **Machine Learning**, **remote sensing**, and **data analytics** to transform traditional farming into smart agriculture.
+
+---
+
+## 🌱 Crop Recommendation: Smart Choices for Better Farming
+
+Our **Crop Recommendation System** helps farmers make **informed decisions** about which crops to cultivate, tailored to their **local environmental and economic conditions**.  
+
+🔍 **Key Features:**
+- Personalized recommendations using soil data, temperature, rainfall, and pH levels
+- Integration of machine learning algorithms for adaptive decision-making
+- Designed for maximum productivity and profitability
+
+---
+
+## 🌾 Yield Prediction: Forecasting the Future of Harvests
+
+**Yield Prediction** enables farmers to anticipate harvest outcomes with accuracy—essential for resource planning and market readiness.  
+
+📊 **Technologies Used:**
+- Machine Learning models trained on historical crop yield data
+- Integration with satellite monitoring and remote sensing (planned)
+- Predictive insights to improve decision-making and reduce risk
+
+---
+
+## 📁 About This Repository
+
+This repository contains:
+- 📓 Jupyter Notebooks for model training and evaluation (located in the `notebook/` directory)
+- 📊 Sample datasets (`.csv` files) for training and testing
+- 🌐 Flask-based web application for user interaction
+
+---
+
+## 💻 How to Run the Project Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/plantalytics.git
+   cd plantalytics
