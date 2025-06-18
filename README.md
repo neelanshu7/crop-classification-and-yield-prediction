@@ -47,4 +47,5 @@ This repository contains:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/plantalytics.git
-   cd plantalytics
+   git clone https://github.com/neelanshu7/crop-classification-and-yield-prediction.git
+   cd crop-classification-and-yield-prediction
