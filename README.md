@@ -72,7 +72,10 @@ crop-classification-and-yield-prediction/
 ├── 📂 notebook/               // Jupyter Notebooks and datasets
 │   ├── crop_prediction.ipynb
 │   ├── yield_prediction.ipynb
-│   └── dataset.csv
+│   └── indiancrop.csv
+│   └── crop_production.csv
+│   └── filtered_crop_production.csv
+│   └── filtered_crop_production_imputed.csv
 │
 ├── 📂 static/                 // Static assets (CSS)
 │   ├── style.css
