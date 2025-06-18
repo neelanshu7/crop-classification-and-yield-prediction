@@ -64,23 +64,30 @@ This repository contains:
 📌 Project Structure
    ```php
 Crop-Classification-Yield-Prediction/
+crop-classification-and-yield-prediction/
+│
+├── 📂 .ipynb_checkpoints/      // Auto-saved Jupyter checkpoints
+├── 📂 __pycache__/             // Compiled Python files
 │
 ├── 📂 notebook/               // Jupyter Notebooks and datasets
-│   ├── crop_recommendation.ipynb
+│   ├── crop_prediction.ipynb
 │   ├── yield_prediction.ipynb
 │   └── dataset.csv
 │
-├── 📂 static/                // Static assets like CSS, JS, images
-│   ├── css/
-│   ├── js/
-│   └── images/
+├── 📂 static/                 // Static assets (CSS)
+│   ├── style.css
 │
-├── 📂 templates/             // HTML templates for Flask
+├── 📂 templates/              // Flask HTML templates
 │   ├── index.html
-│   └── result.html
+│   └── predict.html
+│   └── recommendation.html
+│   └── yield.html
 │
-├── 📄 app.py                 // Main Flask application
-├── 📄 requirements.txt       // Python dependencies
-├── 📄 README.md              // Project documentation
-└── 📄 LICENSE                // License file
-
+├── 📄 app.py                  // Main Flask application
+├── 📄 ensemble_model.pkl      // Ensemble ML model
+├── 📄 label_encoder.pkl       // Label encoder for crop and yield
+├── 📄 scaler.pkl              // Feature scaler for crop classification
+├── 📄 scaler1.pkl             // Feature scaler for yield prediction
+├── 📄 xgboost_model.pkl       // XGBoost ML model
+├── 📄 requirements.txt        // Python dependencies
+├── 📄 README.md               // Project  overview & setup
