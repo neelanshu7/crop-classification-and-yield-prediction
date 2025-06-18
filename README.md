@@ -61,4 +61,15 @@ This repository contains:
 4. Access the application:
    Open your browser and navigate to **http://localhost:5000/**
 
-   
+## 📌 Project Structure   
+plantalytics/
+│
+├── notebook/                # Jupyter Notebooks (.ipynb) for ML models
+│   ├── crop_recommendation.ipynb
+│   └── yield_prediction.ipynb
+│
+├── static/                  # Static files (CSS)
+├── templates/               # HTML templates for the web interface
+├── app.py                   # Main Flask application
+├── requirements.txt         # Python dependencies
+└── README.md                # Project documentation
