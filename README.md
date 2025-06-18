@@ -60,25 +60,3 @@ This repository contains:
 
 4. Access the application:
    Open your browser and navigate to **http://localhost:5000/**
-
-## 📌 Project Structure   
-Crop-Classification-Yield-Prediction/
-│
-├── 📂 notebook/ # Jupyter Notebooks and datasets
-│ ├── crop_recommendation.ipynb
-│ ├── yield_prediction.ipynb
-│ └── dataset.csv
-│
-├── 📂 static/ # Static assets like CSS, JS, images
-│ ├── css/
-│ ├── js/
-│ └── images/
-│
-├── 📂 templates/ # HTML templates for Flask
-│ ├── index.html
-│ └── result.html
-│
-├── 📄 app.py # Main Flask application
-├── 📄 requirements.txt # Python dependencies
-├── 📄 README.md # Project documentation
-└── 📄 LICENSE # License file
