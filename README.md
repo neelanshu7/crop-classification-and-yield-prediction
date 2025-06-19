@@ -7,7 +7,7 @@
 ## 🚀 Overview
 
 At the heart of modern agriculture lies the need for **innovation**, **sustainability**, and **precision**.  
-**Plantalytics** empowers farmers and agricultural stakeholders with cutting-edge solutions for **Crop Recommendation** and **Yield Prediction**, harnessing the power of **Machine Learning**, **remote sensing**, and **data analytics** to transform traditional farming into smart agriculture.
+**Plantalytics** empowers farmers and agricultural stakeholders with cutting-edge solutions for **Crop Recommendation** and **Yield Prediction**, harnessing the power of **Machine Learning** and **data analytics** to transform traditional farming into smart agriculture.
 
 ---
 
@@ -28,7 +28,6 @@ Our **Crop Recommendation System** helps farmers make **informed decisions** abo
 
 📊 **Technologies Used:**
 - Machine Learning models trained on historical crop yield data
-- Integration with satellite monitoring and remote sensing (planned)
 - Predictive insights to improve decision-making and reduce risk
 
 ---
