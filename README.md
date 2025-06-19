@@ -60,7 +60,7 @@ This repository contains:
 4. Access the application:
    Open your browser and navigate to **http://localhost:5000/**
 
-# 📌 Project Structure
+## 📌 Project Structure
    ```php
 Crop-Classification-Yield-Prediction/
 crop-classification-and-yield-prediction/
