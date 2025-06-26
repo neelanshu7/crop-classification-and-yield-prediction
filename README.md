@@ -1,4 +1,4 @@
-# 🌾 Crop Classification and Yield Prediction
+# 🌾 Crop Classification and Yield Prediction 
 
 ### 🔗 Live Website: [plantalytics.onrender.com](https://plantalytics.onrender.com)
 
