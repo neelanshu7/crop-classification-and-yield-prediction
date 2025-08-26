@@ -1,8 +1,8 @@
 # 🌾 Crop Classification and Yield Prediction 
 
 ### 🔗 Live Website: [Plantalytics](https://plantalytics.onrender.com)
-
-### 🔗 Live Website: [Plantalytics](https://plantalytics.onrender.com)
+---
+### 🎬 Sample Video: [Video Link]([https://plantalytics.onrender.com](https://drive.google.com/file/d/1bC_zTgkdhVkMSV3dDE5T82IDNxDq_RZh/view?usp=sharing))
 
 ---
 
